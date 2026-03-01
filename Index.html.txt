@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinbase Support - Help Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #0052ff 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 82, 255, 0.15);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .crypto-grid {
+            background-image: 
+                linear-gradient(rgba(0, 82, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 82, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">₿</span>
+                    </div>
+                    <span class="text-2xl font-bold text-blue-600 tracking-tight">coinbase</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 font-medium transition">Products</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 font-medium transition">Developers</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 font-medium transition">Exchange</a>
+                    <a href="#" class="text-blue-600 font-semibold">Support</a>
+                </div>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-white crypto-grid pt-20 pb-32">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-cyan-50/50 pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6 animate-pulse">
+                <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                24/7 Support Available
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                How can we <br>
+                <span class="gradient-text">help you?</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                Search our knowledge base or contact our support team for assistance with your crypto journey.
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="relative max-w-2xl mx-auto group">
+                <div class="absolute inset-0 bg-blue-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
+                <div class="relative flex items-center bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+                    <i data-lucide="search" class="w-6 h-6 text-gray-400 ml-6"></i>
+                    <input type="text" placeholder="Search for answers, topics, or articles..." 
+                           class="w-full px-6 py-5 text-lg outline-none text-gray-700 placeholder-gray-400">
+                    <button class="bg-blue-600 text-white px-8 py-3 m-2 rounded-xl font-semibold hover:bg-blue-700 transition">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Tags -->
+            <div class="mt-8 flex flex-wrap justify-center gap-3 text-sm">
+                <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-600 hover:bg-blue-100 hover:text-blue-700 cursor-pointer transition">Account Recovery</span>
+                <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-600 hover:bg-blue-100 hover:text-blue-700 cursor-pointer transition">Verification</span>
+                <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-600 hover:bg-blue-100 hover:text-blue-700 cursor-pointer transition">Withdrawals</span>
+                <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-600 hover:bg-blue-100 hover:text-blue-700 cursor-pointer transition">Security</span>
+            </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full blur-2xl animate-float"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-cyan-400/20 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+    </section>
+
+    <!-- Support Categories -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">Browse by Topic</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card rounded-2xl p-8 hover-lift cursor-pointer group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user" class="w-7 h-7 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Managing My Account</h3>
+                    <p class="text-gray-600 mb-4">Update your profile, security settings, and account preferences.</p>
+                    <div class="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
+                        View Articles <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card rounded-2xl p-8 hover-lift cursor-pointer group">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Security & Privacy</h3>
+                    <p class="text-gray-600 mb-4">2FA, password resets, and keeping your crypto safe.</p>
+                    <div class="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
+                        View Articles <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card rounded-2xl p-8 hover-lift cursor-pointer group">
+                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="credit-card" class="w-7 h-7 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Buying & Selling</h3>
+                    <p class="text-gray-600 mb-4">Trading crypto, payment methods, and transaction help.</p>
+                    <div class="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
+                        View Articles <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card rounded-2xl p-8 hover-lift cursor-pointer group">
+                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="send" class="w-7 h-7 text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Sending & Receiving</h3>
+                    <p class="text-gray-600 mb-4">Wallet transfers, network fees, and transaction tracking.</p>
+                    <div class="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
+                        View Articles <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card rounded-2xl p-8 hover-lift cursor-pointer group">
+                    <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="file-text" class="w-7 h-7 text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Taxes & Reports</h3>
+                    <p class="text-gray-600 mb-4">Download statements, tax documents, and reporting tools.</p>
+                    <div class="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
+                        View Articles <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card rounded-2xl p-8 hover-lift cursor-pointer group">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="help-circle" class="w-7 h-7 text-cyan-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Other Topics</h3>
+                    <p class="text-gray-600 mb-4">Coinbase Pro, NFTs, staking, and advanced features.</p>
+                    <div class="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
+                        View Articles <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 opacity-5"></div>
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-12 text-center text-white shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Can't find what you're looking for?</h2>
+                <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+                    Our support team is available 24/7 to assist you with any issues or questions you may have.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <button class="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-6 hover:bg-white/20 transition group">
+                        <i data-lucide="message-circle" class="w-8 h-8 mx-auto mb-3 text-blue-400 group-hover:scale-110 transition-transform"></i>
+                        <div class="font-semibold">Live Chat</div>
+                        <div class="text-sm text-gray-400 mt-1">Avg. wait: 2 min</div>
+                    </button>
+                    
+                    <button class="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-6 hover:bg-white/20 transition group">
+                        <i data-lucide="mail" class="w-8 h-8 mx-auto mb-3 text-green-400 group-hover:scale-110 transition-transform"></i>
+                        <div class="font-semibold">Email Support</div>
+                        <div class="text-sm text-gray-400 mt-1">Response: 24h</div>
+                    </button>
+                    
+                    <button class="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-6 hover:bg-white/20 transition group">
+                        <i data-lucide="phone" class="w-8 h-8 mx-auto mb-3 text-purple-400 group-hover:scale-110 transition-transform"></i>
+                        <div class="font-semibold">Phone Support</div>
+                        <div class="text-sm text-gray-400 mt-1">Priority users</div>
+                    </button>
+                </div>
+
+                <div class="mt-10 pt-10 border-t border-white/10">
+                    <p class="text-sm text-gray-400">
+                        <i data-lucide="clock" class="w-4 h-4 inline mr-1"></i>
+                        Current status: <span class="text-green-400 font-semibold">All systems operational</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">How do I verify my identity?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-5 text-gray-600 border-t border-gray-100 pt-4">
+                        Identity verification typically requires a government-issued ID and a selfie. Go to Settings > Identity Verification to start the process. Most verifications are completed within 24 hours.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">Why is my transaction pending?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-5 text-gray-600 border-t border-gray-100 pt-4">
+                        Transactions may be pending due to network congestion, security checks, or insufficient confirmations. Bitcoin transactions typically require 3 confirmations, while Ethereum requires 12.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">How do I enable 2-factor authentication?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-5 text-gray-600 border-t border-gray-100 pt-4">
+                        Navigate to Security Settings > Two-Factor Authentication. We recommend using an authenticator app like Google Authenticator or Authy for maximum security.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">What are the withdrawal limits?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-5 text-gray-600 border-t border-gray-100 pt-4">
+                        Withdrawal limits depend on your verification level. Level 1: $9,000/day. Level 2: $50,000/day. Level 3: Unlimited. Limits reset every 24 hours.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-xs">₿</span>
+                        </div>
+                        <span class="text-xl font-bold">coinbase</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">The most trusted platform for trading cryptocurrency.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Coinbase Clone. All rights reserved. This is a demo page.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smartsupp Integration Placeholder -->
+    <!-- 
+    PASTE YOUR SMARTSUPP CODE HERE:
+    <script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '5f52518f4980d6c406ac0ea87b460b3ff9aa3f45';
+    window.smartsupp||(function(d) {
+        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+        c.type='text/javascript';c.charset='utf-8';c.async=true;
+        c.src='https://www.smartsuppchat.com/loader.js?';
+        s.parentNode.insertBefore(c,s);
+    })(document);
+    </script>
+    -->
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // FAQ Toggle Function
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('[data-lucide="chevron-down"]');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Search input animation
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', function() {
+            this.parentElement.parentElement.classList.add('scale-105');
+        });
+        searchInput.addEventListener('blur', function() {
+            this.parentElement.parentElement.classList.remove('scale-105');
+        });
+    </script>
+</body>
+</html>
